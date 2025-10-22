@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TOTC — Courses</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="course.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo-shape"><span>TOTC</span></div>
+
+      <nav class="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="buttons">
+        <a href="#" class="btn login">Login</a>
+        <a href="#" class="btn signup">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- LESSON / SLIDER -->
+    <section class="lesson" id="home">
+      <div class="container-1200">
+        <div class="lesson-header">
+          <p>Welcome back, ready for your next lesson?</p>
+          <a href="#" class="view-history">View history</a>
+        </div>
+
+        <div class="slider">
+          <button class="prev" aria-label="previous">&lsaquo;</button>
+
+          <div class="slides-wrapper">
+            <div class="slides">
+              <!-- repeat lesson-card items -->
+              <div class="lesson-card">
+                <img src="image/89048effd249a179586fc67373722e95.jpg" alt="Lesson 1">
+                <h4>AWS Certified Solutions Architect</h4>
+                <progress value="70" max="100"></progress>
+                <p class="progress-text">70% completed</p>
+              </div>
+
+              <div class="lesson-card">
+                <img src="image/c35d8d42a3a9232c0f8ee95cca3d5c2061d60d3e.jpg" alt="Lesson 2">
+                <h4>Intro to JavaScript</h4>
+                <progress value="40" max="100"></progress>
+                <p class="progress-text">40% completed</p>
+              </div>
+
+              <div class="lesson-card">
+                <img src="image/c98bf5ce6375b2f4bd868093876b3d70.jpg" alt="Lesson 3">
+                <h4>Photography Masterclass</h4>
+                <progress value="10" max="100"></progress>
+                <p class="progress-text">10% completed</p>
+              </div> 
+
+              <div class="lesson-card">
+                <img src="image/cdc097e66354bb5022cf004a7c2fc7e4.jpg" alt="Lesson 4">
+                <h4>React Fundamentals</h4>
+                <progress value="90" max="100"></progress>
+                <p class="progress-text">90% completed</p>
+              </div>
+
+              <div class="lesson-card">
+                <img src="image/827f8c8170a5842d2560da75249117af.jpg" alt="Lesson 5">
+                <h4>UI/UX Design Basics</h4>
+                <progress value="20" max="100"></progress>
+                <p class="progress-text">20% completed</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="next" aria-label="next">&rsaquo;</button>
+
+          <!-- dots -->
+          <div class="dots" aria-hidden="false"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="categories" id="courses">
+      
+      <div class="container-1200">
+        <h3>Choose your favourite course from top categories</h3>
+         <!-- 🔍 SEARCH BAR -->
+    <section class="search-section">
+      <div class="container-1200">
+        <div class="search-bar">
+          <input type="text" placeholder="Search your course..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </section>
+        <div class="course-grid">
+          <a href="#"><div class="card design"><i class="fa-solid fa-pen-nib"></i><h4>Design</h4><p>Create visuals with modern tools.</p></div></a>
+          <a href="#"><div class="card dev"><i class="fa-solid fa-code"></i><h4>Development</h4><p>Master web & mobile dev.</p></div></a>
+          <a href="#"><div class="card business"><i class="fa-solid fa-briefcase"></i><h4>Business</h4><p>Start & grow businesses.</p></div></a>
+          <a href="#"><div class="card marketing"><i class="fa-solid fa-bullhorn"></i><h4>Marketing</h4><p>Promote products & brands.</p></div></a>
+          <a href="#"><div class="card photo"><i class="fa-solid fa-camera"></i><h4>Photography</h4><p>Capture and edit photos.</p></div></a>
+          <a href="#"><div class="card acting"><i class="fa-solid fa-theater-masks"></i><h4>Acting</h4><p>Performance & stage skills.</p></div></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOMMENDED -->
+    <section class="recommended">
+      <div class="container-1200">
+        <h3>Recommended for you</h3>
+        <div class="recommended-grid">
+          <div class="recommended-grid">
+          <div class="rec-card">
+            <img src="image/59e91cde877aacb096082025aaa7528e15f2789e.png" alt="">
+                   <div class="icons-div">
+  <div class="icon-item">
+    <span class="material-symbols-outlined">grid_view</span>
+    <p>Design</p>
+  </div>
+  <div class="icon-item">
+    <span class="material-symbols-outlined">schedule</span>
+    <p>3 Month</p>
+  </div>
+</div>
+            <div class="rec-body">
+              <h4>AWS Certified Solutions Architect</h4>
+              <p class="meta">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+            </div>
+          </div>
+          <div class="rec-card">
+            <img src="image/5abcf77024978c219bf2223fc9e32ec5fae8375f (2).png" alt="">
+                  <div class="icons-div">
+  <div class="icon-item">
+    <span class="material-symbols-outlined">grid_view</span>
+    <p>Design</p>
+  </div>
+  <div class="icon-item">
+    <span class="material-symbols-outlined">schedule</span>
+    <p>3 Month</p>
+  </div>
+</div>
+            <div class="rec-body">
+              <h4>AWS Certified Solutions Architect</h4>
+              <p class="meta">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+            </div>
+          </div>
+
+        <div class="recommended-grid">
+          <div class="rec-card">
+            <img src="image/59e91cde877aacb096082025aaa7528e15f2789e.png" alt="">
+                 <div class="icons-div">
+  <div class="icon-item">
+    <span class="material-symbols-outlined">grid_view</span>
+    <p>Design</p>
+  </div>
+  <div class="icon-item">
+    <span class="material-symbols-outlined">schedule</span>
+    <p>3 Month</p>
+  </div>
+</div>
+            <div class="rec-body">
+              <h4>AWS Certified Solutions Architect</h4>
+              <p class="meta">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+            </div>
+          </div>
+          </div>
+
+        <div class="recommended-grid">
+          <div class="rec-card">
+            <img src="image/5abcf77024978c219bf2223fc9e32ec5fae8375f (2).png" alt="">
+           <div class="icons-div">
+  <div class="icon-item">
+    <span class="material-symbols-outlined">grid_view</span>
+    <p>Design</p>
+  </div>
+  <div class="icon-item">
+    <span class="material-symbols-outlined">schedule</span>
+    <p>3 Month</p>
+  </div>
+</div>
+            <div class="rec-body">
+              <h4>AWS Certified Solutions Architect</h4>
+              <p class="meta">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
