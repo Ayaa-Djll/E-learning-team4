@@ -1,210 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
     <meta charset="UTF-8" />
-    <title>prg welcom day
-
-    </title>
+    <title>Prg Welcome Day</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="all "> 
-     <div class="photo">
-        
-      <img src="d703064a3964ba217a784d145ec31cf171c822ca.jpg" alt="صورة التلاميذ" class="bg-img">
+    <div class="all">
+        <div class="photo">
+            <img src="image/d703064a3964ba217a784d145ec31cf171c822ca.jpg" alt="صورة التلاميذ" class="bg-img">
+            <div class="text">
+                <h3>Lorem Ipsum is simply</h3>
+                <p>Lorem Ipsum is simply</p>
+            </div>
+        </div>
 
-      <div class="text">
-        <h3>Lorem Ipsum is simply</h3>
-        <p> Lorem Ipsum is simply</p>
-      </div>
+        <div class="ok">
+            <div class="farme">
+                <h2>Welcome to lorem..!</h2>
+                <div class="buttons">
+                    <button class="login">Login</button>
+                    <button class="register">Register</button>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+            <form action="/action_page.php">
+                <label for="email">Email Address</label><br>
+                <input type="text" id="email" name="email" placeholder="Enter your Email Address"><br><br>
+
+                <label for="username">User name</label><br>
+                <input type="text" id="username" name="username" placeholder="Enter your User name"><br><br>
+
+                <label for="password">Password</label><br>
+                <div class="pssworde">
+                    <input type="password" id="password" name="password" placeholder="Enter your Password">
+                    <span class="eye"></span><br><br>
+                </div>
+
+                <div class="oola">
+                    <button class="ola">Register</button>
+                </div>
+            </form>
+        </div>
     </div>
-    <div class="ok">
-    <div class="farme">
-        <h2>Welcome to lorem..!</h2> <br>
-         <div class="buttons">
-          <div class="new">
-        <button class="login">Login</button>
-        <button class="register">Register</button></div>
-      </div>
-<p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry.  <br>  <br>
-</p> </div>
-
-<form action="/action_page.php">
-  <label for="Name">Email Address</label><br>
-  <input type="text" id="fname" name="fname" placeholder="Enter your Email Address"><br> <br> 
-   <label for="Name">User name</label><br>
-  <input type="text" id="fname" name="fname" placeholder="Enter your User name"><br> <br>
-  <label for="lname">Password</label>
-  <div class="pssworde">
-  <input type="password" id="lname" name="lname"placeholder="Enter your Password">
-  <span class="eye"></span>
-  <br><br></div>
- <div class="oola">
-  <button class="ola">Register</button>
-</div>
-       
-</form> 
-    
-    
-
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f8f9fb;
+        }
+        .all {
+            display: flex;
+            width: 1100px;
+            height: 570px;
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+        .photo {
+            position: relative;
+            width: 50%;
+        }
+        .bg-img {
+            width: 98%;
+            height: 98%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        .text {
+            position: absolute;
+            bottom: 40px;
+            left: 50px;
+            color: white;
+        }
+        .text h3 {
+            font-size: 24px;
+        }
+        .ok {
+            padding: 40px;
+            width: 50%;
+        }
+        .farme {
+            text-align: center;
+        }
+        .buttons {
+            margin-bottom: 25px;
+        }
+        .buttons button {
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 500;
+            color: #fffafa;
+        }
+        .login, .register {
+            background: #49BBBD;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-weight: 500;
+            height: 29px;
+            width: 90px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        input {
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: 2px solid #49BBBD;
+            outline: none;
+            font-size: 14px;
+            width: 400px;
+            margin-top: 10px;
+        }
+        .pssworde {
+            position: relative;
+        }
+        .pssworde .eye {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        .ola {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 100px;
+            border: none;
+            border-radius: 25px;
+            background-color: #49BBBD;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .ola:hover {
+            background-color: #36a6a8;
+        }
+        .oola {
+            display: flex;
+            justify-content: right; 
+            margin-top: 20px;
+        }
+    </style>
 </body>
-<style>
-   * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
- body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #f8f9fb;
-}
-.all {
-  display: flex;
-  width: 1100px;
-  height: 570px;
-  background: hsl(0, 0%, 100%);
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  padding: 10px;
-}
-.farme{
-    text-align: center;
-}
-.photo{
-position: relative;
-  width: 50%;
-
-
-}
-.bg-img {
-  width: 98%;
-  height: 98%;
-  object-fit: cover;
-  border-radius: 20px;
-  justify-content: center;
-}
-.text {
-  position: absolute;
-  bottom: 40px;
-  left: 50px;
-  color: white;
-}
-.text h2 {
-  font-size: 32px;
-}
-
-.ok{
-  padding: 40px;
-}
-.buttons {
- 
-  margin-bottom: 25px;
-    
-  
-
-}
-.buttons button {
-  border: none;
-  padding: 10px 25px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-weight: 500;
-  color:#fffafa ;
-}
-input {
-  padding: 10px 15px;
-  border-radius: 20px;
-  border: 1px solid #ccc;
-  outline: none;
-  font-size: 14px;
-  height: 40px;
-  width: 400px;
-  padding: 20px;
-  margin-top: 10px;
-  border: 2px solid #49BBBD;
-}
-
-.pssworde {
-  position: relative;
-}
-
-.pssworde .eye {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-
-.register {
-  background: #49BBBD;
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 25px;
-  padding:  10px;
-  margin-top: 10px;
-  cursor: pointer;
-  font-weight: 500;
-  height: 29px ;
-  width: 90px;
- text-align: center;
-}
-.login {
-  background: #49BBBD;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 10px;
-  margin-top: 15px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: 0.3s;
-   height: 29px ;
-  width: 90px;
- text-align: center;
-}
-.register-btn:hover {
-  background: #008fb0;
-
-}
-.heh{
-  height: 13px;
-  width: 13px;
- 
-  
-}
-.ola {
-  display: flex;
-  justify-content: center;   
-  align-items: center;      
-  height: 30px;
-  width: 100px;
-  border: none;
-  border-radius: 25px;
-  background-color: #49BBBD;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.ola:hover {
-  background-color: #36a6a8;
-}
-
-.oola {
-  display: flex;
-  justify-content: right; 
-  margin-top: 20px;
-}
-
-
-
-</style>
 </html>
