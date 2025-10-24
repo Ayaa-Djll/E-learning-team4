@@ -585,27 +585,43 @@ footer .copyright {
 
 /* ==================== RESPONSIVE ==================== */
 
+/* Mobile devices */
 @media (max-width: 768px) {
-.nav,
+  .nav,
   .buttons {
-    display: none;  
+    display: none;
   }
-  .header .container {
-    display: flex;
-      width: 100%;
-      margin: 10px;
-  }
-   .hamburger {
+  .hamburger {
     display: block;
     color: #5B5B5B;
+    font-size: 28px;
+    cursor: pointer;
   }
-  .hamburger :hover{
+  .hamburger:hover {
     color: #49BBBD;
   }
+
+  /* When nav is active (after toggle) */
+  .nav.active  {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #f9fafc;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 5;
+  }
+
   
+
   .search-bar {
     max-width: 95%;
     padding: 8px 12px;
+    margin: 20px auto;
   }
 
   .search-bar input {
@@ -621,7 +637,6 @@ footer .copyright {
 
   .slides {
     flex-wrap: nowrap;
-    overflow-x: scroll;
   }
 
   .lesson-card {

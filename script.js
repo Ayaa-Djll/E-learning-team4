@@ -1,7 +1,18 @@
-// slider logic: moves by actual card width (includes gap)
 document.addEventListener('DOMContentLoaded', () => {
+  // ---------- NAVBAR ----------
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.nav');
+  const buttons = document.querySelector('.buttons');
+
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      buttons.classList.toggle('active');
+    });
+  }
+
+  // ---------- SLIDER ----------
   const slidesRow = document.querySelector('.slides');
-  const slidesWrapper = document.querySelector('.slides-wrapper');
   const cards = Array.from(document.querySelectorAll('.lesson-card'));
   const prevBtn = document.querySelector('.prev');
   const nextBtn = document.querySelector('.next');
@@ -11,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let cardsPerView = getCardsPerView();
   let total = cards.length;
 
-  // create dots based on "pages"
   function createDots() {
     dotsContainer.innerHTML = '';
     const pages = Math.max(1, total - cardsPerView + 1);
@@ -28,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function getGapPx() {
-    // read gap from computed style of slides (returns e.g. "20px")
     const cs = getComputedStyle(slidesRow);
     const gap = cs.gap || cs.columnGap || '20px';
     return parseInt(gap) || 20;
@@ -42,10 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function updateSlider() {
-    // recalc values in case of resize
     cardsPerView = getCardsPerView();
     const gap = getGapPx();
-    // card width is offsetWidth (includes padding and border) - good for pixel-perfect movement
     const cardWidth = cards[0].offsetWidth;
     const moveX = (cardWidth + gap) * currentIndex;
     slidesRow.style.transform = `translateX(-${moveX}px)`;
@@ -67,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (dots[idx]) dots[idx].classList.add('active');
   }
 
-  // events
   nextBtn.addEventListener('click', () => {
     if (currentIndex < total - cardsPerView) {
       currentIndex++;
@@ -82,23 +88,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // on resize: recalc card sizes & cardsPerView & dots
-  let resizeTimer;
   window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      const oldPerView = cardsPerView;
-      cardsPerView = getCardsPerView();
-      // correct currentIndex if newly visible amount changed
-      if (currentIndex > total - cardsPerView) {
-        currentIndex = Math.max(0, total - cardsPerView);
-      }
-      createDots();
-      updateSlider();
-    }, 120);
+    cardsPerView = getCardsPerView();
+    if (currentIndex > total - cardsPerView) {
+      currentIndex = Math.max(0, total - cardsPerView);
+    }
+    createDots();
+    updateSlider();
   });
 
-  // initial setup
   createDots();
   updateSlider();
 });
