@@ -1485,21 +1485,16 @@ footer .copyright {
   .btn {
     padding: 10px 22px;
   }
-
   .hero {
     gap: 200px;
     padding: 120px 60px;
   }
-
   .hero-content h1 {
     font-size: 36px;
   }
-
   .hero-image img {
     width: 380px;
   }
-  
-
 }
 
 /* *small*/
@@ -1507,21 +1502,17 @@ footer .copyright {
   .header {
     padding: 20px 60px;
   }
-
   .nav {
     gap: 70px;
   }
-
   .nav a {
     font-size: 17px;
   }
-
   .hero {
     flex-direction: column;
     text-align: center;
     gap: 60px;
   }
-
   .hero-content {
     max-width: 600px;
   }
@@ -1541,8 +1532,7 @@ footer .copyright {
   .hero-image img {
     width: 320px;
   }
-  
-
+}
 /* small ecran*/
 @media (max-width: 1024px) {
   .nav {
@@ -1565,59 +1555,7 @@ footer .copyright {
   .hero-content h1 {
     font-size: 30px;
   }
-}
-
-@media (max-width: 850px) {
-  .class-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .text-content, .gradebook-card {
-    max-width: 100%;
-  }
-
-  .description {
-    margin: 0 auto;
-  }
-}
-
-/* responsive */
-@media (max-width: 900px) {
-  .tools-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 60px 40px;
-  }
-
-  .image-content {
-    margin-top: 40px;
-  }
-}
-/* Responsive */
-@media (max-width: 900px) {
-  .features-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .text-side {
-    text-align: center;
-  }
-}
-/*Responsive  */
-@media (max-width: 900px) {
-  .page {
-    flex-direction: column;
-    text-align: center;
-  }
-  .text-page p {
-    margin: 0 auto 20px;
-  }
-}
-/* RESPONSIVE  */
-@media (max-width: 992px) {
-  .hero {
+   .hero {
     flex-direction: column;
     text-align: center;
     padding: 120px 40px;
@@ -1636,26 +1574,47 @@ footer .copyright {
   .card2 { top: 35%; right: 10%; }
   .card3 { bottom: 8%; left: 15%; }
 }
-
-@media (max-width: 700px) {
-  .hero-content h1 { font-size: 30px; }
-  .hero-content { max-width: 100%; }
-
-  .hero-buttons {
+@media (max-width: 850px) {
+  .class-section {
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    text-align: center;
   }
 
-  .hero-image img {
-    width: 250px;
+  .text-content, .gradebook-card {
+    max-width: 100%;
   }
 
-  
-  .card { display: none; }
+  .description {
+    margin: 0 auto;
+  }
 }
-/*(Responsive) */
-@media (max-width: 992px) {
+/* Responsive */
+@media (max-width: 900px) {
   .features-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-side {
+    text-align: center;
+  }
+  .tools-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 40px;
+  }
+
+  .image-content {
+    margin-top: 40px;
+  }
+   .page {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-page p {
+    margin: 0 auto 20px;
+  }
+   .features-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -1668,40 +1627,20 @@ footer .copyright {
   .feature-item {
     justify-content: center;
   }
-}
-/* small screens */
-@media (max-width:900px){
-  .wrap{padding-top:10px}
+   .wrap{padding-top:10px}
   .visual{order:2}
   .info{order:1; text-align:center}
   .points li{justify-content:center; text-align:center; flex-direction:column; gap:8px}
   .icon{margin-bottom:6px}
   .card.big{margin:0 auto 12px auto}
   .row{justify-content:center}
-}
-/* Responsive */
-@media (max-width: 768px) {
-  .features {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .feature {
-    width: 90%;
-  }
-}
-/* responsive */
-@media (max-width: 900px) {
-  .assessments-container {
+   .assessments-container {
     flex-direction: column;
     text-align: center;
   }
   .quiz-info {
     max-width: 100%;
   }
-}
-/* responsive */
-@media (max-width: 900px) {
   .quizzes-container {
     flex-direction: column;
     text-align: center;
@@ -1710,4 +1649,103 @@ footer .copyright {
     max-width: 100%;
   }
 }
+@media (max-width: 700px) {
+  .hero-content h1 { font-size: 30px; }
+  .hero-content { max-width: 100%; }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .hero-image img {
+    width: 250px;
+  }
+  .card { display: none; }
+}
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .discussion-section {
+    flex-direction: column;
+    gap: 50px;
+    padding: 60px 20px;
+  }
+  .discussion-card {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+  }
+  .iconO-container {
+    top: -15px;
+    left: -15px;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .cardO-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .teacherO img,
+  .studentO img {
+    width: 120px;
+    height: 120px;
+  }
+  .teacherO .textO h3 {
+    font-size: 15px;
+  }
+  .teacherO .textO p {
+    font-size: 12px;
+  }
+  .end-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  .discussion-background,
+  .discussion-background.second {
+    display: none; /* نخفي الخلفيات باش مانكثروش على الشاشة الصغيرة */
+  }
+  .discussion-right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .discussion-right h2 {
+    font-size: 28px;
+  }
+
+  .discussion-right p {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .discussion-section {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .discussion-card {
+    width: 80%;
+  }
+
+  .discussion-right {
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .discussion-background.second {
+    left: 45px;
+    top: 45px;
+  }
 }

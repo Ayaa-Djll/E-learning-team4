@@ -6,25 +6,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="all">
-        <div class="photo">
-            <img src="image/d703064a3964ba217a784d145ec31cf171c822ca.jpg" alt="صورة التلاميذ" class="bg-img">
-            <div class="text">
-                <h3>Lorem Ipsum is simply</h3>
-                <p>Lorem Ipsum is simply</p>
-            </div>
-        </div>
+   <div class="all">
+    <div class="photo">
+      <img class="bg-img" src="images/3d2212c26d48440cd871897408ac64c61604bb17 (1).jpg" alt="students">
+      <div class="text">
+        <h3>Welcome back</h3>
+        <p>Start your next lesson</p>
+      </div>
+    </div>
 
-        <div class="ok">
-            <div class="farme">
-                <h2>Welcome to lorem..!</h2>
-                <div class="buttons">
-                    <button class="login">Login</button>
-                    <button class="register">Register</button>
-                </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-
+    <div class="ok">
+      <div class="farme">
+        <h2>Welcome to Lorem..!</h2>
+        <div class="buttons">
+          <a href="Login.html">Login</a>
+          <a href="Register.html">Register</a>
+          </div>
+        <p class="subtitle">Lorem Ipsum is simply dummy text of the printing industry.</p>
+      </div>
             <form action="/action_page.php">
                 <label for="email">Email Address</label><br>
                 <input type="text" id="email" name="email" placeholder="Enter your Email Address"><br><br>
@@ -39,7 +38,7 @@
                 </div>
 
                 <div class="oola">
-                    <button class="ola">Register</button>
+                      <a href="index.html" class="ola">Register</a>
                 </div>
             </form>
         </div>
@@ -58,39 +57,68 @@
             height: 100vh;
             background: #f8f9fb;
         }
-        .all {
-            display: flex;
-            width: 1100px;
-            height: 570px;
-            background: #fff;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            padding: 10px;
-        }
-        .photo {
-            position: relative;
-            width: 50%;
-        }
-        .bg-img {
-            width: 98%;
-            height: 98%;
-            object-fit: cover;
-            border-radius: 20px;
-        }
-        .text {
-            position: absolute;
-            bottom: 40px;
-            left: 50px;
-            color: white;
-        }
-        .text h3 {
-            font-size: 24px;
-        }
-        .ok {
-            padding: 40px;
-            width: 50%;
-        }
+    .all{
+    width:1100px;
+    max-width:100%;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    display:flex;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+  }
+
+  /* left image */
+  .photo{width:50%;position:relative}
+  .bg-img{width:100%;height:100%;object-fit:cover;display:block}
+  .text{position:absolute;left:30px;bottom:30px;color:#fff}
+  .text h3{font-size:26px;margin-bottom:6px}
+  .text p{opacity:.95}
+
+  /* right panel */
+  .ok{
+    flex:1;
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+  }
+
+  
+    .buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin: 10px 0 15px 0;
+    }
+
+    .buttons a {
+      padding: 10px 35px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #2EC5B6;
+      background-color: #D4F4EF;
+      transition: 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: #2EC5B6;
+      color: white;
+    }
+
+    .buttons a.active {
+      background-color: #2EC5B6;
+      color: white;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
         .farme {
             text-align: center;
         }
@@ -136,29 +164,28 @@
             transform: translateY(-50%);
             cursor: pointer;
         }
-        .ola {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 30px;
-            width: 100px;
-            border: none;
-            border-radius: 25px;
-            background-color: #49BBBD;
-            color: white;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .ola:hover {
-            background-color: #36a6a8;
-        }
-        .oola {
-            display: flex;
-            justify-content: right; 
-            margin-top: 20px;
-        }
+         .oola {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ola {
+  background-color: #3cb5a9;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 40px; /* بدل width الثابت بالـ padding */
+  transition: 0.3s;
+  display: inline-block;
+  text-align: center;
+}
+
+.ola:hover {
+  background-color: #34a097;
+}     
     </style>
 </body>
 </html>
