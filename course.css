@@ -56,6 +56,7 @@ body {
   font-size: 24px;
   cursor: pointer;
 }
+.header  span a  { display: none;}
 
 .nav {
   display: flex;
@@ -591,6 +592,7 @@ footer .copyright {
   .buttons {
     display: none;
   }
+ 
   .hamburger {
     display: block;
     color: #5B5B5B;
@@ -599,6 +601,18 @@ footer .copyright {
   }
   .hamburger:hover {
     color: #49BBBD;
+  }
+  .header  span a  {display: block;}
+  .header  span a  {
+    text-decoration: none;
+    color: #5B5B5B;
+    font-size: 28px;
+    cursor: pointer;
+
+  }
+  .header span a:hover {
+    color: #49BBBD;
+
   }
 
   /* When nav is active (after toggle) */
