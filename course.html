@@ -16,22 +16,19 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="logo-shape"><span>TOTC</span></div>
-
+      <div class="logo-shape"><span>TOTC</span></div> 
+    <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
       <nav class="nav">
-        <a href="#home" class="active">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="#courses">Courses</a>
         <a href="#about">About</a>
       </nav>
-
       <div class="buttons">
-        <a href="#" class="btn login">Login</a>
-        <a href="#" class="btn signup">Sign Up</a>
+        <a href="login.html" class="btn login">Login</a>
+        <a href="registre.html" class="btn signup">Sign Up</a>
       </div>
     </div>
   </header>
-
-  <main>
     <!-- LESSON / SLIDER -->
     <section class="lesson" id="home">
       <div class="container-1200">
@@ -522,9 +519,23 @@
 </div>
 
 <p class="copyright">© 2021 Class Technologies Inc.</p>
-
      </footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.querySelector('.nav'); // utilise la classe
+  const buttons = document.querySelector('.buttons');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    buttons.classList.toggle('active');
+  });
+});
+</script>
+
+
     
+   
   </main>
   <script src="script.js"></script>
 </body>
