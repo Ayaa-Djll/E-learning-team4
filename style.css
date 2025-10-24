@@ -1502,7 +1502,7 @@ footer .copyright {
 
 }
 
-/* 💻 شاشات أصغر (الحواسيب الصغيرة) */
+/* *small*/
 @media (max-width: 1100px) {
   .header {
     padding: 20px 60px;
@@ -1543,7 +1543,7 @@ footer .copyright {
   }
   
 
-/* 🧠 شاشات صغيرة بزاف (مثلاً 1024 أو أقل) */
+/* small ecran*/
 @media (max-width: 1024px) {
   .nav {
     gap: 40px;
@@ -1710,4 +1710,4 @@ footer .copyright {
     max-width: 100%;
   }
 }
-
+}
