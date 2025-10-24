@@ -31,6 +31,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 
 .container {
@@ -47,24 +48,43 @@ body {
   color: #fff;
   letter-spacing: 2px;
 }
+.logo-shape {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #00fff0;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-shape span {
+  transform: rotate(-45deg);
+  font-weight: 700;
+  font-size: 26px;
+  color:#fff;
+}
 html{
   scroll-behavior: smooth;
 }
+
 .nav {
   display: flex;
   gap: 150px;
   margin-left: auto;
   margin-right: 80px;
+  z-index: 10;
 }
 
 .nav a {
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 500;
   transition: 0.3s;
   position: relative;
    font-family: pouppins;
+   cursor: pointer;
 }
 
 .nav a:hover,
@@ -78,11 +98,10 @@ html{
 }
 
 .btn {
-  padding: 10px 22px;
+  padding: 14px 30px;
   border-radius: 25px;
   font-weight: 500;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 .login {
@@ -90,13 +109,17 @@ html{
   color: #2EC5B6;
    font-family: pouppins;
 }
-
+.login:hover {
+background-color:#2EC5B6;
+color: #fff;
+border-color: #2EC5B6;
+transform: scale(1.05);
+}
 .signup {
   background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
   border: 1px solid #fff;
    font-family: pouppins;
-
 }
 
 
@@ -1277,12 +1300,14 @@ html{
   font-weight: 600;
   color: #2b2b2b;
   margin: 0;
+  font-family: pouppins;
 }
 
 .teacherO .textO p {
   font-size: 13px;
   color: #888;
   margin: 3px 0 0 0;
+   font-family: pouppins;
 }
 .studentO {
   display: flex;
@@ -1307,6 +1332,7 @@ html{
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
+   font-family: pouppins;
 }
 
 .end-btn:hover {
@@ -1318,22 +1344,25 @@ html{
 }
 
 .discussion-right h2 {
-  font-size: 28px;
-  color: #1b1b1b;
+  font-size: 35px;
+  color: #2F327D;
   margin-bottom: 10px;
+  font-family: pouppins;
 }
 
 .discussion-right h2 span {
-  color: #0047ff;
+  color: #3cb5a9;
+  font-family: pouppins;
 }
 
 .discussion-right p {
-  color: #555;
+  color: #696984;
   line-height: 1.6;
-  font-size: 15px;
+  font-size: 17px;
+  font-family: pouppins;
 }
 footer {
-  background-color:#252641;          
+  background-color: #252641;          
   color: #ffffff;
   text-align: center;
   padding: 40px 0;
@@ -1387,7 +1416,7 @@ footer input[type="email"] {
   height:30px ;
   }
   footer input[type="email"]::placeholder{
-    color: #83839A;
+    color:#83839A ;
   }
 
 footer button {
@@ -1444,6 +1473,100 @@ footer .copyright {
 
 
 /* Responsive */
+@media (max-width: 1300px) {
+  .nav {
+    gap: 100px;
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 10px 22px;
+  }
+
+  .hero {
+    gap: 200px;
+    padding: 120px 60px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-image img {
+    width: 380px;
+  }
+  
+
+}
+
+/* 💻 شاشات أصغر (الحواسيب الصغيرة) */
+@media (max-width: 1100px) {
+  .header {
+    padding: 20px 60px;
+  }
+
+  .nav {
+    gap: 70px;
+  }
+
+  .nav a {
+    font-size: 17px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .hero-content {
+    max-width: 600px;
+  }
+   .hero-image{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 20px;
+   }
+   .card{
+    position: static;
+    width: 80%;
+    max-width: 300px;
+   }
+  .hero-image img {
+    width: 320px;
+  }
+  
+
+/* 🧠 شاشات صغيرة بزاف (مثلاً 1024 أو أقل) */
+@media (max-width: 1024px) {
+  .nav {
+    gap: 40px;
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
+
+  .buttons {
+    gap: 8px;
+  }
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 850px) {
   .class-section {
     flex-direction: column;
@@ -1530,7 +1653,7 @@ footer .copyright {
   
   .card { display: none; }
 }
-/* تنسيق الاستجابة (Responsive) */
+/*(Responsive) */
 @media (max-width: 992px) {
   .features-content {
     flex-direction: column;
