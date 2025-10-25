@@ -739,143 +739,284 @@ footer .copyright {
 
 /* ===== RESPONSIVE ===== */
 
-@media (max-width: 1024px) {
-  .container {
-    padding: 0 20px;
-  }
-
-  .nav {
-    gap: 30px;
-  }
-
-  .creators {
-    gap: 25px;
-  }
-
-  .testimonial-card {
+@media (max-width: 900px) {
+  .tools-section {
     flex-direction: column;
-    align-items: center;
-    padding: 30px;
-  }
-
-  .student-info {
     text-align: center;
-    padding-left: 0;
-    margin-top: 20px;
+    padding: 60px 40px;
   }
 
-  .side-avatars {
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
+  .image-content {
+    margin-top: 40px;
   }
 }
-
-@media (max-width: 768px) {
-  .nav {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .header {
-    padding: 15px;
-  }
-
-  .creators {
+/* Responsive */
+@media (max-width: 900px) {
+  .features-content {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
-
-  .creator-card {
-    width: 85%;
-  }
-
-  .students-section h2 {
-    font-size: 24px;
-  }
-
-  .circle-bg {
-    width: 180px;
-    height: 180px;
-  }
-
-  .circle-bg img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .testimonial-card {
-    width: 95%;
-    padding: 25px;
-  }
-
-  .student-info h3 {
-    font-size: 20px;
-  }
-
-  .student-info .desc {
-    font-size: 15px;
-  }
-
-  footer p, .paragraph, .footer-links p {
-    font-size: 18px;
-  }
-
-  footer input[type="email"] {
-    width: 250px;
-  }
-
-  footer button {
-    width: 120px;
-    height: 35px;
-    font-size: 14px;
+  .text-side {
+    text-align: center;
   }
 }
-
-@media (max-width: 480px) {
-  .creator-card img {
-    width: 90px;
-    height: 90px;
-    top: -40px;
+/*Responsive  */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-page p {
+    margin: 0 auto 20px;
+  }
+}
+/* RESPONSIVE  */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 40px;
   }
 
-  .creator-card {
-    padding-top: 60px;
+  .hero-image img {
+    width: 300px;
   }
 
-  .students-section h2 {
-    font-size: 20px;
-  }
-
-  .testimonial-card {
-    padding: 20px;
-  }
-
-  .circle-bg {
-    width: 140px;
-    height: 140px;
-  }
-
-  .circle-bg img {
-    width: 160px;
-    height: 160px;
-  }
-
-  .social-icons i {
-    width: 25px;
-    height: 25px;
+  .card {
+    width: 150px;
     font-size: 12px;
   }
 
-  .side-avatars img {
-    width: 60px;
-    height: 60px;
+  .card1 { top: 8%; left: 10%; }
+  .card2 { top: 35%; right: 10%; }
+  .card3 { bottom: 8%; left: 15%; }
+  .cell{
+display: none;
+
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-content h1 { font-size: 30px; }
+  .hero-content { max-width: 100%; }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
   }
 
-  footer input[type="email"] {
-    width: 200px;
+  .hero-image img {
+    width: 250px;
   }
+
+  
+  .card { display: none; }
+  .cell{
+display: none;
+/* te3dil */
+  .Learning {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .learn-more {
+    max-width: 100%;
+  }
+
+  .rectangle {
+    width: 200px;
+    height: 180px;
+  }
+
+  .circle1, .circle2, .circle3 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .learn-more h2 {
+    font-size: 20px;
+  }
+
+  .learn-more ul li {
+    font-size: 14px;
+  }
+
+  .learn-more a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+
+  }
+}
+/*(Responsive) */
+@media (max-width: 992px) {
+  .features-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .features-right {
+    text-align: center;
+  }
+
+  .feature-item {
+    justify-content: center;
+  }
+  .cell{
+display: none;
+
+  }
+  
+}
+/* small screens */
+@media (max-width:900px){
+  .wrap{padding-top:10px}
+  .visual{order:2}
+  .info{order:1; text-align:center}
+  .points li{justify-content:center; text-align:center; flex-direction:column; gap:8px}
+  .icon{margin-bottom:6px}
+  .card.big{margin:0 auto 12px auto}
+  .row{justify-content:center}
+  .cell{
+display: none;
+
+  }
+  /* te3dil */
+  .Learning {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .learn-more {
+    max-width: 100%;
+  }
+
+  .rectangle {
+    width: 200px;
+    height: 180px;
+  }
+
+  .circle1, .circle2, .circle3 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .learn-more h2 {
+    font-size: 20px;
+  }
+
+  .learn-more ul li {
+    font-size: 14px;
+  }
+
+  .learn-more a {
+    font-size: 14px;
+    padding: 8px 12px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 90%;
+  }
+  /* te3dil */
+  .Learning {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .learn-more {
+    max-width: 100%;
+  }
+
+  .rectangle {
+    width: 200px;
+    height: 180px;
+  }
+
+  .circle1, .circle2, .circle3 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .learn-more h2 {
+    font-size: 20px;
+  }
+
+  .learn-more ul li {
+    font-size: 14px;
+  }
+
+  .learn-more a {
+    font-size: 14px;
+    padding: 8px 12px;
+}
+/* responsive */
+@media (max-width: 900px) {
+  .assessments-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .quiz-info {
+    max-width: 100%;
+  }
+}
+/* responsive */
+@media (max-width: 900px) {
+  .quizzes-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .quiz-info {
+    max-width: 100%;
+  }
+  
+.cell{
+display: none;
+
+  }
+}
+/* te3dil */
+  .Learning {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .learn-more {
+    max-width: 100%;
+  }
+
+  .rectangle {
+    width: 200px;
+    height: 180px;
+  }
+
+  .circle1, .circle2, .circle3 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .learn-more h2 {
+    font-size: 20px;
+  }
+
+  .learn-more ul li {
+    font-size: 14px;
+  }
+
+  .learn-more a {
+    font-size: 14px;
+    padding: 8px 12px;
+}
+}
 }
