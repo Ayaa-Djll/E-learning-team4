@@ -96,9 +96,18 @@ document.addEventListener('DOMContentLoaded', () => {
     createDots();
     updateSlider();
   });
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.querySelector('.nav');
 
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
   createDots();
   updateSlider();
 });
+
+
+
+
 
 
