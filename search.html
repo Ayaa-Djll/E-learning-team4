@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TOTC — Search</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="search.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo-shape"><span>TOTC</span></div> 
+      <div class="hamburger" id="hamburger">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+      <nav class="nav">
+        <a href="search.html" class="active">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="user">
+        <img src="images/2f32d3a9082c2e2832481561feec93a5e5c5e8d6 (1).png" alt="User">
+        <p>Lina</p>
+        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Section -->
+  <section class="search-section1">
+    <div class="image-wrapper">
+      <img src="images/7a80a7af42c44b95173f6bb18529bebd58808a65.jpg" alt="background">
+      <div class="container-12">
+        <div class="search-bar1">
+          <input type="text" placeholder="Search your course..." />
+          <i class="fas fa-search"></i>
+        </div>
+
+        <!-- Dropdown filters -->
+        <div class="dropdowns" style="margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+          <select id="subject" name="subject">
+            <option value="">Subject</option>
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="english">English</option>
+            <option value="history">History</option>
+            <option value="geography">Geography</option>
+            <option value="physics">Physics</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="art">Art</option>
+            <option value="music">Music</option>
+            <option value="computer">Computer Science</option>
+          </select>
+
+          <select id="partner" name="partner">
+            <option value="">Partner</option>
+            <option value="ahmed">Ahmed</option>
+            <option value="fatima">Fatima</option>
+            <option value="youssef">Youssef</option>
+            <option value="sara">Sara</option>
+            <option value="mohamed">Mohamed</option>
+            <option value="imane">Imane</option>
+            <option value="khalid">Khalid</option>
+            <option value="hanae">Hanae</option>
+            <option value="adil">Adil</option>
+            <option value="noura">Noura</option>
+          </select>
+
+          <select id="programme" name="programme">
+            <option value="">Programme</option>
+            <option value="computer_science">Computer Science</option>
+            <option value="business_admin">Business Administration</option>
+            <option value="engineering">Engineering</option>
+            <option value="medicine">Medicine</option>
+            <option value="law">Law</option>
+            <option value="architecture">Architecture</option>
+            <option value="design">Design</option>
+            <option value="education">Education</option>
+            <option value="finance">Finance</option>
+            <option value="psychology">Psychology</option>
+          </select>
+
+          <select id="language" name="language">
+            <option value="">Language</option>
+            <option value="english">English</option>
+            <option value="french">French</option>
+            <option value="arabic">Arabic</option>
+            <option value="spanish">Spanish</option>
+            <option value="german">German</option>
+            <option value="chinese">Chinese</option>
+            <option value="japanese">Japanese</option>
+            <option value="russian">Russian</option>
+            <option value="italian">Italian</option>
+            <option value="portuguese">Portuguese</option>
+          </select>
+
+          <select id="availability" name="availability">
+            <option value="">Availability</option>
+            <option value="available">Available</option>
+            <option value="not_available">Not Available</option>
+            <option value="busy">Busy</option>
+            <option value="on_leave">On Leave</option>
+            <option value="weekend">Weekend</option>
+            <option value="holiday">Holiday</option>
+            <option value="meeting">In a Meeting</option>
+            <option value="remote">Working Remotely</option>
+          </select>
+
+          <select id="learning_type" name="learning_type">
+            <option value="">Learning Type</option>
+            <option value="online">Online Learning</option>
+            <option value="in_person">In-Person Learning</option>
+            <option value="hybrid">Hybrid (Online & In-Person)</option>
+            <option value="self_paced">Self-Paced Learning</option>
+            <option value="group">Group Learning</option>
+            <option value="one_on_one">One-on-One Tutoring</option>
+            <option value="workshop">Workshop</option>
+            <option value="bootcamp">Bootcamp</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommended Section -->
+  <section class="rec">
+    <div class="container-1200">
+      <div class="recommended-grid">
+        <!-- Card 1 -->
+        <div class="rec-card">
+          <img src="images/59e91cde877aacb096082025aaa7528e15f2789e.png" alt="">
+          <div class="icons-div">
+            <div class="icon-item">
+              <span class="material-symbols-outlined">grid_view</span>
+              <p>Design</p>
+            </div>
+            <div class="icon-item">
+              <span class="material-symbols-outlined">schedule</span>
+              <p>3 Month</p>
+            </div>
+          </div>
+          <div class="rec-body">
+            <h4>AWS Certified Solutions Architect</h4>
+            <p class="meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="price-box">
+            <p><s>$100</s> <span class="new-price">$80</span></p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="rec-card">
+          <img src="images/photo_2025-10-20_22-18-23.jpg" alt="">
+          <div class="icons-div">
+            <div class="icon-item">
+              <span class="material-symbols-outlined">grid_view</span>
+              <p>Design</p>
+            </div>
+            <div class="icon-item">
+              <span class="material-symbols-outlined">schedule</span>
+              <p>3 Month</p>
+            </div>
+          </div>
+          <div class="rec-body">
+            <h4>Adobe Illustrator Masterclass</h4>
+            <p class="meta">Learn vector design from beginner to pro.</p>
+          </div>
+          <div class="price-box">
+            <p><s>$120</s> <span class="new-price">$95</span></p>
+          </div>
+        </div>
+        <!-- Card 1 -->
+        <div class="rec-card">
+          <img src="images/006d5a45b6b658c01af8d2026594be7c377dff00 (1).jpg" alt="">
+          <div class="icons-div">
+            <div class="icon-item">
+              <span class="material-symbols-outlined">grid_view</span>
+              <p>Design</p>
+            </div>
+            <div class="icon-item">
+              <span class="material-symbols-outlined">schedule</span>
+              <p>3 Month</p>
+            </div>
+          </div>
+          <div class="rec-body">
+            <h4>AWS Certified Solutions Architect</h4>
+            <p class="meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="price-box">
+            <p><s>$100</s> <span class="new-price">$80</span></p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="rec-card">
+          <img src="images/184ea984728d97f74c9593e26f95bbf9044112bb (1).jpg" alt="">
+          <div class="icons-div">
+            <div class="icon-item">
+              <span class="material-symbols-outlined">grid_view</span>
+              <p>Design</p>
+            </div>
+            <div class="icon-item">
+              <span class="material-symbols-outlined">schedule</span>
+              <p>3 Month</p>
+            </div>
+          </div>
+          <div class="rec-body">
+            <h4>AWS Certified Solutions Architect</h4>
+            <p class="meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="price-box">
+            <p><s>$100</s> <span class="new-price">$80</span></p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="rec-card">
+          <img src="images/59e91cde877aacb096082025aaa7528e15f2789e.png" alt="">
+          <div class="icons-div">
+            <div class="icon-item">
+              <span class="material-symbols-outlined">grid_view</span>
+              <p>Design</p>
+            </div>
+            <div class="icon-item">
+              <span class="material-symbols-outlined">schedule</span>
+              <p>3 Month</p>
+            </div>
+          </div>
+          <div class="rec-body">
+            <h4>AWS Certified Solutions Architect</h4>
+            <p class="meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="price-box">
+            <p><s>$100</s> <span class="new-price">$80</span></p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="rec-card">
+          <img src="images/89048effd249a179586fc67373722e95.jpg" alt="">
+          <div class="icons-div">
+            <div class="icon-item">
+              <span class="material-symbols-outlined">grid_view</span>
+              <p>Design</p>
+            </div>
+            <div class="icon-item">
+              <span class="material-symbols-outlined">schedule</span>
+              <p>3 Month</p>
+            </div>
+          </div>
+          <div class="rec-body">
+            <h4>AWS Certified Solutions Architect</h4>
+            <p class="meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="price-box">
+            <p><s>$100</s> <span class="new-price">$80</span></p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="rec-card">
+          <img src="images/b14041b3e77b5f8d702e78041ed2b68c4f67137f (2).jpg" alt="">
+          <div class="icons-div">
+            <div class="icon-item">
+              <span class="material-symbols-outlined">grid_view</span>
+              <p>Design</p>
+            </div>
+            <div class="icon-item">
+              <span class="material-symbols-outlined">schedule</span>
+              <p>3 Month</p>
+            </div>
+          </div>
+          <div class="rec-body">
+            <h4>AWS Certified Solutions Architect</h4>
+            <p class="meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="price-box">
+            <p><s>$100</s> <span class="new-price">$80</span></p>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="rec-card">
+          <img src="images/59e91cde877aacb096082025aaa7528e15f2789e.png" alt="">
+          <div class="icons-div">
+            <div class="icon-item">
+              <span class="material-symbols-outlined">grid_view</span>
+              <p>Design</p>
+            </div>
+            <div class="icon-item">
+              <span class="material-symbols-outlined">schedule</span>
+              <p>3 Month</p>
+            </div>
+          </div>
+          <div class="rec-body">
+            <h4>AWS Certified Solutions Architect</h4>
+            <p class="meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="price-box">
+            <p><s>$100</s> <span class="new-price">$80</span></p>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="rec-card">
+          <img src="images/5512cf17d2456865c90822799dacf1ebcf5771cc.jpg" alt="">
+          <div class="icons-div">
+            <div class="icon-item">
+              <span class="material-symbols-outlined">grid_view</span>
+              <p>Design</p>
+            </div>
+            <div class="icon-item">
+              <span class="material-symbols-outlined">schedule</span>
+              <p>3 Month</p>
+            </div>
+          </div>
+          <div class="rec-body">
+            <h4>AWS Certified Solutions Architect</h4>
+            <p class="meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="price-box">
+            <p><s>$100</s> <span class="new-price">$80</span></p>
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="rec-card">
+          <img src="images/17848fb62a166d04a92f6f3c2f4fec0e6f0c35a7.jpg" alt="">
+          <div class="icons-div">
+            <div class="icon-item">
+              <span class="material-symbols-outlined">grid_view</span>
+              <p>Design</p>
+            </div>
+            <div class="icon-item">
+              <span class="material-symbols-outlined">schedule</span>
+              <p>3 Month</p>
+            </div>
+          </div>
+          <div class="rec-body">
+            <h4>AWS Certified Solutions Architect</h4>
+            <p class="meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="price-box">
+            <p><s>$100</s> <span class="new-price">$80</span></p>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </section>
+  <div class="Learning">
+    <div class="learn-more">
+      <h2>Know about learning learning platform</h2>
+      <ul>
+        <li>Free E-book, video & consolation</li>
+        <li>Top instructors from around world</li>
+        <li>Top courses from your team</li>
+      </ul>
+      <a href="#"> Start learning now</a>
+    </div>
+    <div class="learning-image">
+  <div class="rectangle">
+    <div class="circle1" style="background-color:#EE6767;"></div>
+<div class="circle2" style="background-color:#F6C566;"></div>
+<div class="circle3" style="background-color:#5BEB7B;"></div>
+
+  </div>
+
+  <div class="gallery">
+    <!--   photo1  -->
+ <div class="main">
+  <img src="images/14ea616c948f8917d234e52c5a3e23b3c75723eb.jpg" alt="Main Instructor">
+  <div class="info">
+    <span class="material-symbols-outlined">android_cell_4_bar</span>
+    <p>Eveny Howard</p>
+  </div>
+  <div class="Call">
+    <a href="tel:+201234567890" class="call-button">
+      <span>Call</span>
+      <span class="material-symbols-outlined">call</span>
+    </a>
+   <div class="pres"> Pres </div>
+  </div>
+
+
+    </div>
+
+    <!-- 2ND   -->
+    <div class="cell">
+      <img src="images/ada98f21b111783e76881ec5644408bdde7b0edd.png" alt="Tamara">
+      <div class="info">
+        <span class="material-symbols-outlined">android_cell_4_bar</span>
+        <p>Tamara</p>
+      </div>
+    </div>
+
+    <div class="cell">
+      <img src="images/6a324de5c94a9ba1a6d453c5348b067f8698108b.png" alt="Adem">
+      <div class="info">
+        <span class="material-symbols-outlined">android_cell_4_bar</span>
+        <p>Adem</p>
+      </div>
+    </div>
+
+    <!--  3RD -->
+    <div class="cell">
+      <img src="images/c975507ab8fc3e147dca2c0bccccbead1c14ebb6.png" alt="Humbert Holland">
+      <div class="info">
+        <span class="material-symbols-outlined">android_cell_4_bar</span>
+        <p>Humbert Holland</p>
+      </div>
+    </div>
+    <div class="cell">
+      <img src="images/43643df7a0cddfa0ae7c584b93b20c53a064580a.png" alt="Patricia Mendoza">
+      <div class="info">
+        <span class="material-symbols-outlined">android_cell_4_bar</span>
+        <p>Patricia Mendoza</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Classes tought by real creators-->
+<section class="creators-section">
+  <h1>Classes taught by real creators</h1>
+<section class="creators">
+  <div class="creator-card">
+    <img src="images/43643df7a0cddfa0ae7c584b93b20c53a064580a.png" alt="Jane Cooper">
+    <div class="creator-info">
+      <h3>Jane Cooper</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="creator-card">
+    <img src="images/b98d0164f5d18f1ceafba1c7356f12455da07e63.jpg" alt="John Doe">
+    <div class="creator-info">
+      <h3>John Doe</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+  <div class="creator-card">
+    <img src="images/43643df7a0cddfa0ae7c584b93b20c53a064580a.png" alt="Jane Cooper">
+    <div class="creator-info">
+      <h3>Jane Cooper</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="creator-card">
+    <img src="images/c975507ab8fc3e147dca2c0bccccbead1c14ebb6.png" alt="Humbert Holland">
+    <div class="creator-info">
+      <h3>Humbert Holland</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="creator-card">
+    <img src="images/43643df7a0cddfa0ae7c584b93b20c53a064580a.png" alt="Patricia Mendoza">
+    <div class="creator-info">
+      <h3>Patricia Mendoza</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="creator-card">
+    <img src="images/b98d0164f5d18f1ceafba1c7356f12455da07e63.jpg" alt="Tamara">
+    <div class="creator-info">
+      <h3>Tamara</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="creator-card">
+    <img src="images/c975507ab8fc3e147dca2c0bccccbead1c14ebb6.png" alt="Adem">
+    <div class="creator-info">
+      <h3>Adem</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+</section>
+</section>
+<!-- What our students have to say-->
+<section class="students-section">
+  <h2>What our students have to say</h2>
+
+  <div class="testimonial-card">
+    <div class="student-image">
+      <div class="circle-bg">
+        <img src="images/4c6498cce2e253cf38639b4ba215c7df58ce5a53.jpg" alt="Student">
+      </div>
+    </div>
+
+    <div class="student-info">
+      <h3>Savannah Nguyen</h3>
+      <p class="email">tanya.hill@example.com</p>
+      <p class="desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+      </p>
+
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+
+    <div class="side-avatars">
+      <img src="images/43643df7a0cddfa0ae7c584b93b20c53a064580a.png" alt="">
+      <img src="images/ada98f21b111783e76881ec5644408bdde7b0edd.png" alt="">
+      <img src="images/6a324de5c94a9ba1a6d453c5348b067f8698108b.png" alt="">
+      <img src="images/c975507ab8fc3e147dca2c0bccccbead1c14ebb6.png" alt="">
+    </div>
+  </div>
+</section>
+ <footer>
+    <div>
+       <div class="logo-shape"><span>TOTC</span></div>
+       <div class="vertical-line"></div>
+       <P>Virtual Class for Zoom</P>
+   </div>
+   <div>
+    <p class="paragraph">Subscribe to get our Newsletter</p>
+    <input type="email" placeholder="Your email">
+    <button>Subscribe</button>
+   </div>
+   <div class="footer-links">
+  <p>Careers</p>
+  <div class="vertical-line"></div>
+  <p>Privacy Policy</p>
+  <div class="vertical-line"></div>
+  <p>Terms & Conditions</p>
+</div>
+
+<p class="copyright">© 2021 Class Technologies Inc.</p>
+
+     </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
