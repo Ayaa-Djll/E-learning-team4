@@ -1020,3 +1020,30 @@ display: none;
 }
 }
 }
+/* ✅ Mobile Menu Style */
+@media (max-width: 992px) {
+  .nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 20px;
+    display: none; /* مخفية في البداية */
+    gap: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+  }
+
+  .nav.show {
+    display: flex !important; /* تظهر القائمة عند الضغط */
+  }
+
+  .user {
+    display: none; /* إخفاء المستخدم في الهاتف */
+  }
+
+  .hamburger {
+    display: block; /* إظهار الهامبرغر */
+  }
+}
