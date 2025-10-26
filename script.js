@@ -96,21 +96,19 @@ document.addEventListener('DOMContentLoaded', () => {
     createDots();
     updateSlider();
   });
+ <script>
   const hamburger = document.getElementById('hamburger');
   const nav = document.querySelector('.nav');
 
   hamburger.addEventListener('click', () => {
     nav.classList.toggle('show');
   });
-  const hamburger = document.getElementById('hamburger');
-  const nav = document.querySelector('.nav');
+</script>
 
-  hamburger.addEventListener('click', () => {
-    nav.classList.toggle('show');
-  });
   createDots();
   updateSlider();
 });
+
 
 
 
