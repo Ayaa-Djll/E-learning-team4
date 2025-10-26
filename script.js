@@ -96,7 +96,27 @@ document.addEventListener('DOMContentLoaded', () => {
     createDots();
     updateSlider();
   });
+// ---------- PAGE SWITCHING ----------
+const homeLink = document.getElementById('homeLink');
+const coursesLink = document.getElementById('coursesLink');
+const aboutLink = document.getElementById('aboutLink');
+
+const homePage = document.getElementById('homePage');
+const coursesPage = document.getElementById('coursesPage');
+const aboutPage = document.getElementById('aboutPage');
+
+function showPage(page) {
+  homePage.style.display = 'none';
+  coursesPage.style.display = 'none';
+  aboutPage.style.display = 'none';
+  page.style.display = 'block';
+}
+
+homeLink.addEventListener('click', () => showPage(homePage));
+coursesLink.addEventListener('click', () => showPage(coursesPage));
+aboutLink.addEventListener('click', () => showPage(aboutPage));
 
   createDots();
   updateSlider();
 });
+
